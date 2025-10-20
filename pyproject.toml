@@ -1,5 +1,5 @@
 [project]
-name = "discord-shift-bot"
+name = "backwater-studios"
 version = "0.1.0"
 description = "Discord shift tracking bot for Roblox game development teams"
 requires-python = ">=3.11"
