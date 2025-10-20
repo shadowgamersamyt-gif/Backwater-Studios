@@ -8,8 +8,14 @@ from database import ShiftDatabase
 from web_server import start_web_server
 from dotenv import load_dotenv
 import aiohttp
+import logging
 
+# Load environment variables (.env locally, Fly.io secrets in production)
 load_dotenv()
+
+# Set up logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -17,12 +23,6 @@ intents.members = True
 
 bot = commands.Bot(command_prefix="!", intents=intents)
 db = ShiftDatabase()
-
-SHIFT_ROLE_ID = None
-LOGS_CHANNEL_ID = None
-SHIFT_MESSAGE_ID = None
-SHIFT_CHANNEL_ID = None
-ADMIN_ROLE_IDS = []
 
 
 def format_duration(seconds):
