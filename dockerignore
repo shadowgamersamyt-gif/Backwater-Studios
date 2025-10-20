@@ -1,0 +1,14 @@
+# Prevent local files from going into the Docker image
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.env.*
+.git
+.gitignore
+README.md
+replit.*
+.DS_Store
+.vscode/
+.idea/
