@@ -1,0 +1,11 @@
+[project]
+name = "discord-shift-bot"
+version = "0.1.0"
+description = "Discord shift tracking bot for Roblox game development teams"
+requires-python = ">=3.11"
+dependencies = [
+    "aiohttp>=3.13.1",
+    "discord-py>=2.6.4",
+    "psycopg2-binary>=2.9.11",
+    "python-dotenv>=1.1.1",
+]
