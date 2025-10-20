@@ -1,5 +1,5 @@
-app = "your-fly-app-name"
-primary_region = "iad"
+app = "backwater-studios"
+primary_region = "dfw"
 
 [build]
 
