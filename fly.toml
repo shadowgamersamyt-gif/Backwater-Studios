@@ -1,5 +1,5 @@
 app = "backwater-studios"
-primary_region = "iad"
+primary_region = "dfw"
 
 [build]
 
